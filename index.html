@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="shortcut icon" href="./photos/l.jpg" type="image/x-icon">
+    <link rel="style" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/svg-with-js.min.css" integrity="sha512-1dRVqjH1H79nqU3U7EhqE0E6G25FHVEqfoChIwiXBLk32sOWc6ZrgDzPax1VRuBr+NJknIO6B27MdlahVuZSRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+                   
+            <nav clss="navbar">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Achivement</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Contact</a>
+                
+            </nav>
+        </header>
+        <section class="home">
+            <div class="home-content">
+                        <h3>Hello,Its Me</h3>
+                        <h1>B.LIPIKA</h1>
+                <h3>And I'm a <span class="text"></span></h3>
+                 <p>B.Lipika Studing in Canara Engineering college.
+                    <br> Currently pursuing B.E in Information Science stream.<br>
+                 
+        </div>
+    
+    <div class="home-sci">
+        <a href="#"><box-icon type='logo' name='gmail'><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><box-icon name='instagram' type='logo' ><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><box-icon name='linkedin-square' type='logo' ><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <a href="#" class="btn-box">More About Me</a> 
+ 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a  class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="skills.html"class="nav-link" href="#">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html"class="nav-link" href="#">Education</a>
+              </li>
+              <li class="nav-item">
+                <a href="education.html"class="nav-link" href="#">Achivement</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+    <div id="about">
+        <div class="container"></div>
+        <div class="row">
+            <div class="about-col-1">
+
+            </div>
+            <div class="about-col-2"></div>
+            <h1 class="sub-title">About Me</h1>
+            <p>I'm Lipika, an aspiring engineering student with a passion for tackling complex challenges and innovating solutions.
+                Currently enrolled in Canara engineering college,I bring a strong foundation in CSE steam Information science and a proficiency in  Skills/Programming Languages.<br> Eager to apply my knowledge and hands-on experience gained through various projects, internships, and coursework.<br> I am committed to pushing the boundaries of technology and contributing to advancements in the field.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links"onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills"></div>
+            <ul>
+                <li><span>Programming Languages</span><br>C/C++<br>java<br>R Programming</li>
+                <li><span>Web Development</span><br>HTML/CSS/JAVASCRIPT</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="Education">
+            <ul>
+                 <li><span>2024-Current</span><br>Canara engineering College,Magalore</li>
+                <li><span>2022</span><br>Capitanio Pu college,Mangalore</li>
+                <li><span>2020</span><br>St.joseph High School,Mangalore</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+    <div id="services">
+        <div class="container"></div>
+        <h1 class="sub-title">My work</h1>
+        <div class="services-list">
+            <div>
+                <h2>Canarall</h2>
+                <p>web app based on travel sources providing service</p>
+            </div>
+             
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+
+            }
+            for(tablink of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classlist.add("active-tab");
+    }
+    </script>
+    
+</body>
+</html>
